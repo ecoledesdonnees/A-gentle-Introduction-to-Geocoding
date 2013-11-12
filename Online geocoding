@@ -1,7 +1,7 @@
-Geocoding is the conversion of a human-readable location name into a numeric (or other machine-processable) location such as a longitude and latitude. For example:
+Le géocodage est la conversion d'une géolocalisation lisible par les humains (comme une adresse, un lieu) dans une géolocalisation en valeur  numérique (ou bien qui soit directement traitable par un ordinateur)comme une longitude et une latitude. Par exemple:
 
-London => [geocoding] => {latitude: -0.81, longitude: 51.745}
-Geocoding is a common need when working with data as you may only have human-readable locations (e.g. “London” or a zip code like “12245”) but for a computer to display the data on a map or query it requires one to have actual numerical geographical coordinates.
+Paris => [geocodage] => {latitude: -1.552906, longitude: 47.220268}
+Le géocodage est un besoin courant quand on travaille avec des données dont la localisation n'est peut être lisible que par des hommes (comme “Nantes” ou une adresse postale comme “44000”) but for a computer to display the data on a map or query it requires one to have actual numerical geographical coordinates.
 
 Aside: in the example just given we’ve the term “London” has been converted to a point with a single Latitude and Longitude. Of course, London (the City in the UK) covers a significant area and so a polygon would be a better representation. However, for most purposes a single point is all we need.
 
