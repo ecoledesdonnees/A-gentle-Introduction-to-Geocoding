@@ -1,13 +1,14 @@
 Le géocodage est la conversion d'une géolocalisation lisible par les humains (comme une adresse, un lieu) dans une géolocalisation en valeur  numérique (ou bien qui soit directement traitable par un ordinateur)comme une longitude et une latitude. Par exemple:
 
 Paris => [geocodage] => {latitude: -1.552906, longitude: 47.220268}
-Le géocodage est un besoin courant quand on travaille avec des données dont la localisation n'est peut être lisible que par des hommes (comme “Nantes” ou une adresse postale comme “44000”) but for a computer to display the data on a map or query it requires one to have actual numerical geographical coordinates.
+Le géocodage est un besoin courant quand on travaille avec des données dont la localisation n'est peut être lisible que par des hommes (comme “Nantes” ou une adresse postale comme “44000”) mais pour un ordinateur pour afficher les données sur une carte ou l'interroger, il est nécessaire d'avoir des coordonnées géographiques réelles sous forme numérique.
 
-Aside: in the example just given we’ve the term “London” has been converted to a point with a single Latitude and Longitude. Of course, London (the City in the UK) covers a significant area and so a polygon would be a better representation. However, for most purposes a single point is all we need.
+NB: dans l'exemple fourni précédemment, nous avons le terme “Nantes” qui a été converti en un point avec une seule latitude et longitude. Bien sûr, Nantes (la ville en France) couvre une zone plus large et un polygone serait sûrement une meilleure représentation. Cependant, dans la plupart des cas, un point est largement suffisant.
 
-In theory, to do geocoding we just need a database that lists place names and their corresponding coordinates. Several, such open databases exist including geonames and OpenStreetMap.
+En théorie, pour faire du géocodage, nous avons juste besoin d'une base de données qui liste les lieux existants et leurs coordonnées correspondantes. 
+Plusieurs de ces bases de données, ouvertes existent, notamment Geonames et OpenStreetMap.
 
-However, we don’t want to have to do the lookups ourselves – that would either involve programming or a lot of very tedious scrolling.
+Cependant, nous ne voulons pas avoir à faire cette recherche nous-même – que cela nécessite de la programmation ou bien de faire défiler beaucoup de pages, à la main.
 
 As a result, various web services have been built which allow look ups online or over a web API. These services also assist in find the best match for a given name – for a given simple place name such as London there may be several matching locations (e.g. London, UK and London, Ontario) and one needs some way to match and rank these alternatives.
 
