@@ -1,7 +1,7 @@
-Le géocodage est la conversion d'une localisation lisible par les humains (comme une adresse, un lieu) dans une localisation en valeur  numérique (ou bien qui soit directement traitable par un ordinateur)comme une longitude et une latitude. Par exemple:
+Le géocodage est la conversion d'une localisation lisible par les humains (comme une adresse, un lieu) vers une localisation en valeur  numérique (ou bien qui soit directement traitable par un ordinateur) comme une longitude et une latitude. Par exemple:
 
 Paris => [geocodage] => {latitude: -1.552906, longitude: 47.220268}
-Le géocodage est un besoin courant quand on travaille avec des données dont la localisation n'est peut être lisible que par des hommes (comme “Nantes” ou une adresse postale comme “44000”) mais pour un ordinateur pour afficher les données sur une carte ou l'interroger, il est nécessaire d'avoir des coordonnées géographiques réelles sous forme numérique.
+Le géocodage est un besoin courant quand on travaille avec des données dont la localisation n'est peut être lisible que par des hommes (comme “Nantes” ou une adresse postale comme “44000”). Pour un ordinateur pour afficher les données sur une carte ou l'interroger, il est nécessaire d'avoir des coordonnées géographiques réelles sous forme numérique.
 
 NB: dans l'exemple fourni précédemment, nous avons le terme “Nantes” qui a été converti en un point avec une seule latitude et longitude. Bien sûr, Nantes (la ville en France) couvre une zone plus large et un polygone serait sûrement une meilleure représentation. Cependant, dans la plupart des cas, un point est largement suffisant.
 
@@ -10,16 +10,16 @@ Plusieurs de ces bases de données, ouvertes existent, notamment Geonames et Ope
 
 Cependant, nous ne voulons pas avoir à faire cette recherche nous-même – que cela nécessite de la programmation ou bien de faire défiler beaucoup de pages, à la main.
 
-En conséquence, différents services web ont été construits pour permettre cette opération ou via une API web. Ces services aident aussi à trouver le meilleur emplacement pour un nom donné – pour un nom de lieu simple comme Nantes, il y a de nombreuses géolocalisations qui correspondent (comme Nantes, en France, ou bien au Québec) et on a besoin d'une certaine façon de faire correspondre et classer ces alternatives.
+En conséquence, différents services web ont été construits pour permettre cette opération ou via une API web. Ces services aident aussi à trouver le meilleur emplacement pour un nom donné – pour un nom de lieu simple comme Nantes, il y a de nombreuses localisations qui correspondent (comme Nantes, en France, ou bien au Québec) et on a besoin d'une certaine façon de faire correspondre et classer ces alternatives.
 
-Il y a une variété de services de Géocodage. Nous recommandons d'en utiliser un basé sur des données ouvertes comme le service Nominatim de MapQuest qui utilise la base de données libre `Open Street Map`_ . Ce service fournit à la fois un service ”lisible par les hommes” (HTML) et une API “lisible par les machines” (JSON et XML) pour un géocodage automatique.
+Il y a une variété de services de Géocodage. Nous recommandons d'en utiliser un, basé sur des données ouvertes comme le service Nominatim de MapQuest qui utilise la base de données libre `Open Street Map`_ . Ce service fournit à la fois un service ”lisible par les hommes” (HTML) et une API “lisible par les machines” (JSON et XML) pour un géocodage automatique.
 
 Bon, alors maintenant il est temps de mettre les mains dans le cambouis.
 
 1. Prenez un jeu de données avec des localisations que vous souhaitez géocoder
-2. Suivre le mode d'emploi dans le manuel qui vou montre comment géolocaliser.
-3. Si vous voulez – allez une étape plus loin et mettez vos données sur une carte. Il y a de nombreux services disponibles pour faire ça. Tilemill de Mapbox est un moyen très élégant pour cela, vous permettant de personnaliser votre carte à votre guise – la documentation est aussi très claire et accessible, Google Fusion Tables permet aussi de facilement dessiner des points sur une carte et est un choix très populaire pour de nombreux journalistes de données à cause de sa facilité d'apprentissage.
-Une fois fini – mettez un lien vers votre production dans les comenatires ci-dessous – cela peut être juste un jeu de données géocodés complet  – ou une belle carte. Allez-ausi loin que cela le nécessite!
+2. Suivre le mode d'emploi dans le manuel qui vous montre comment géocoder.
+3. Si vous voulez – allez une étape plus loin et mettez vos données sur une carte. Il y a de nombreux services disponibles pour faire ça. Tilemill de Mapbox est un moyen très élégant pour cela, vous permettant de personnaliser votre carte à votre guise – la documentation est aussi très claire et accessible. Google Fusion Tables permet aussi de facilement dessiner des points sur une carte et est un choix très populaire pour de nombreux journalistes de données à cause de sa facilité d'apprentissage.
+Une fois fini – mettez un lien vers votre production dans les commentaires ci-dessous – cela peut être juste un jeu de données géocodé complet  – ou une belle carte. Allez-ausi loin que cela le nécessite!
 
 Exemple – `Human-readable HTML`_
 http://i.imgur.com/zCpzg8a.jpg
@@ -27,4 +27,4 @@ Exemple – JSON lisible par des machines
 (JSON est aussi lisible par les hommes si vous avez un plugin)
 
 http://i.imgur.com/SjoQuYP.png
-- Voir plus à: http://schoolofdata.org/handbook/courses/geocoding/#sthash.OcYoF9BE.dpuf
+- Voir plus sur: http://schoolofdata.org/handbook/courses/geocoding/#sthash.OcYoF9BE.dpuf
